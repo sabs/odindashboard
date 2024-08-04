@@ -1,0 +1,83 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(resources/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-auto-rows: 500px; */
+    font-size: 1.6em;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    background-color: #14591D;
+    color: aliceblue;
+    grid-column: 1;
+    grid-row: span 2;
+    padding: 2em;
+}
+
+
+#header {
+    background-color: violet;
+    grid-column: 2 / 5;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+#search {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 1em;
+}
+#search input {
+    width: 90%;
+    vertical-align: center;
+}
+#biguser {
+    /* padding: 1em; */
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#buttons {
+    /* padding: 1em; */
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+#main-content {
+    background-color: goldenrod;
+    display: grid;
+    grid-column: 2 / 5;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#cardtainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.card {
+    /* height: 50px; */
+    /* width: 150px; */
+    display: grid;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    border-left: solid 15px black;
+}
+#announcements {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: crimson;
+}
+#trending {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: blueviolet;
+}
